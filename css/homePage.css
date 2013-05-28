@@ -1,0 +1,56 @@
+.FirstSlide
+{
+	background-color: #5a5a5a;
+	display: inline-block;
+	width: 100%;
+}
+.FirstSlideBottom
+{
+
+	height: 250px;
+	background-color: #bebebe;
+	width: 100%;
+	margin-top: -145px;
+}
+.SubPictureTitle
+{
+	font-size: 2.2em;
+	font-family: Tahoma;
+	/*font-weight: 700;*/
+}
+#SoftwareIcon
+{
+	display: inline-block;
+	height: 208px;
+	width: 208px;
+
+	background-repeat: no-repeat;
+	background-image: url('../recorces/software.png');
+}
+#GraphicsIcon
+{
+	display: inline-block;
+	height: 208px;
+	width: 208px;
+
+	background-repeat: no-repeat;
+	background-image: url('../recorces/graphics.png');
+}
+#WebDesingIcon
+{
+	display: inline-block;
+	height: 208px;
+	width: 208px;
+
+	background-repeat: no-repeat;
+	background-image: url('../recorces/webdesing.png');
+}
+
+
+
+
+.SecondSlide
+{
+	background-color: #dcdada;
+	height: 500px;
+}
