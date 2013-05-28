@@ -74,18 +74,35 @@
 	padding-top: 10px;
 }
 #BrowserImages
-{
+{/*
 	height: 188px;
-	width: 712px;
+	width: 712px;*/
+	height: 155px;
+	width: 590px;
 	display: inline-block;
 	background-image: url('../recorces/browsersImage.png');
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 #ScreensImages
-{
+{/*
 	height: 230px;
-	width: 650px;
+	width: 650px;*/
+	height: 183px;
+	width: 520px;
 	display: inline-block;
 	background-image: url('../recorces/screens.png');
 	background-repeat: no-repeat;
+	background-size: cover;
+}
+#PlatformsImages
+{/*
+	height: 230px;
+	width: 650px;*/
+	height: 150px;
+	width: 431px;
+	display: inline-block;
+	background-image: url('../recorces/platforms.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
