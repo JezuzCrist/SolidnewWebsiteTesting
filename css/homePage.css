@@ -52,11 +52,32 @@
 .SecondSlide
 {
 	background-color: #dcdada;
-	height: 500px;
+	/*height: 500px;*/
 }
 .TitleBlack
 {
 	color: #414141;
 	font-size: 5em;
 	font-family: Tahoma;
+}
+.SubTitleBlack
+{
+	color: #282828;
+	font-size: 2.2em;
+	font-family: Tahoma;
+}
+.TextBlock
+{
+	text-align: left;
+	width: 300px;
+	padding-left: 60px;
+	padding-top: 10px;
+}
+#BrowserImages
+{
+	height: 188px;
+	width: 712px;
+	display: inline-block;
+	background-image: url('../recorces/browsersImage.png');
+	background-repeat: no-repeat;
 }
