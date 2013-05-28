@@ -75,35 +75,24 @@
 	font-size: 1.3em;
 }
 #BrowserImages
-{/*
-	height: 188px;
-	width: 712px;*/
-	height: 155px;
-	width: 590px;
-	display: inline-block;
-	background-image: url('../recorces/browsersImage.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+{
+	max-width: 685px;
+	width: 100%;
+	display: inline-block
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select:none;
 }
 #ScreensImages
-{/*
-	height: 230px;
-	width: 650px;*/
-	height: 142px;
-	width: 402px;
+{
+	max-width: 649px;
+	width: 100%;
 	display: inline-block;
-	background-image: url('../recorces/screens.png');
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 #PlatformsImages
-{/*
-	height: 230px;
-	width: 650px;*/
-	height: 150px;
-	width: 431px;
+{
+	max-width: 431px;
+	width: 100%;
 	display: inline-block;
-	background-image: url('../recorces/platforms.png');
-	background-repeat: no-repeat;
-	background-size: cover;
 }
