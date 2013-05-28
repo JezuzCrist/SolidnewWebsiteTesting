@@ -70,8 +70,9 @@
 {
 	text-align: left;
 	width: 300px;
-	padding-left: 60px;
+	padding-left: 30px;
 	padding-top: 10px;
+	font-size: 1.3em;
 }
 #BrowserImages
 {/*
@@ -88,8 +89,8 @@
 {/*
 	height: 230px;
 	width: 650px;*/
-	height: 183px;
-	width: 520px;
+	height: 142px;
+	width: 402px;
 	display: inline-block;
 	background-image: url('../recorces/screens.png');
 	background-repeat: no-repeat;
