@@ -81,3 +81,11 @@
 	background-image: url('../recorces/browsersImage.png');
 	background-repeat: no-repeat;
 }
+#ScreensImages
+{
+	height: 230px;
+	width: 650px;
+	display: inline-block;
+	background-image: url('../recorces/screens.png');
+	background-repeat: no-repeat;
+}
