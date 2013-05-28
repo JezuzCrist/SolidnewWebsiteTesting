@@ -56,7 +56,6 @@ html , body
 	height: 208px;
 	width: 208px;
 
-	padding-right: 85px;
 	background-repeat: no-repeat;
 	background-image: url('../recorces/software.png');
 }
@@ -75,7 +74,6 @@ html , body
 	height: 208px;
 	width: 208px;
 
-	padding-right: 85px;
 	background-repeat: no-repeat;
 	background-image: url('../recorces/webdesing.png');
 }
