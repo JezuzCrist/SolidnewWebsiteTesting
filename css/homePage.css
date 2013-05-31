@@ -96,3 +96,15 @@
 	width: 100%;
 	display: inline-block;
 }
+
+
+.ThirdSlide
+{
+	background-color: #525252;
+}
+.TitleWhite
+{
+	color: white;
+	font-size: 5em;
+	font-family: Tahoma;
+}
