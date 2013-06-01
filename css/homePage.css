@@ -108,3 +108,19 @@
 	font-size: 5em;
 	font-family: Tahoma;
 }
+#SoftwareImage
+{
+	max-width: 450px;
+	width: 100%;
+	display: inline-block;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select:none;
+}
+.SubTitleWhite
+{
+	color: white;
+	font-size: 2.2em;
+	font-family: Tahoma;
+}
