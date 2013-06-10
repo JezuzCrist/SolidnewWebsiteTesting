@@ -3,15 +3,19 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/homePage.css">
+
+	<script type="text/javascript" src="js/libs/jquery-1.10.1.js"></script>
+
+	<script type="text/javascript" src="js/code/scrollManager.js"></script>
 </head>
 
 <body>
 	<div class="Header">
 		<div id="SolidHeaderLogo"><div id="SolidHeaderLogoImage"></div></div>
 		<div style=" padding-left: 200px; ">
-			<div class="HeaderItem">Software</div>
-			<div class="HeaderItem">Website Desing</div>
-			<div class="HeaderItem">Graphics</div>
+			<div class="HeaderItem" scroolto="#SoftwareSolutions" >Software</div>
+			<div class="HeaderItem" scroolto="#WebDesing">Website Desing</div>
+			<div class="HeaderItem" scroolto="#Graphics">Graphics</div>
 			<div class="HeaderItem">About</div>
 			<div class="HeaderItem">Contact Us</div>
 		</div>
@@ -19,22 +23,22 @@
 	<div class="ContentContainer">
 		<div class="FirstSlide">
 			<div style="margin-left: auto;	margin-right: auto;	display: inline-block; padding-top: 100px;">
-				<div style="display: inline-block;  padding-right: 40px;	padding-left: 40px;">
+				<div action="scroll" scroolto="#SoftwareSolutions" style="display: inline-block;  padding-right: 40px;	padding-left: 40px;">
 					<div id="SoftwareIcon">	</div>
 					<div class="SubPictureTitle">Software</div>
 				</div>
-				<div style="display: inline-block;  padding-right: 40px;	padding-left: 40px;">
+				<div action="scroll" scroolto="#WebDesing" style="display: inline-block;  padding-right: 40px;	padding-left: 40px;">
 					<div id="WebDesingIcon"></div>
 					<div class="SubPictureTitle">Web Desing</div>
 				</div>
-				<div style="display: inline-block; padding-right: 40px;	padding-left: 40px;">
+				<div action="scroll" scroolto="#Graphics" style="display: inline-block; padding-right: 40px;	padding-left: 40px;">
 					<div id="GraphicsIcon"></div>
 					<div class="SubPictureTitle">Graphics</div>
 				</div>
 			</div>
 			<div class="FirstSlideBottom"></div>
 		</div>
-		<div class="WhiteSlide">			
+		<div id="WebDesing" class="WhiteSlide">			
 			<div style="padding:40px">
 				<div style="background-color:#cac6c6;height:1px;"></div>
 				<div style="background-color:#adadad;height:1px;"></div>
@@ -74,7 +78,7 @@
 				
 			</div>
 		</div>
-		<div class="ThirdSlide">			
+		<div id="SoftwareSolutions" class="ThirdSlide">			
 			<div style="padding:40px">
 				<div style="background-color:#717070;height:1px;"></div>
 				<div style="background-color:#3a3939;height:1px;"></div>
@@ -94,7 +98,7 @@
 			</div>
 		</div>
 
-		<div class="WhiteSlide">
+		<div id="Graphics" class="WhiteSlide">
 			<div style="padding:40px">
 				<div style="background-color:#cac6c6;height:1px;"></div>
 				<div style="background-color:#adadad;height:1px;"></div>
@@ -119,7 +123,7 @@
 
 	<div class="Fotter">
 		<div style="text-align: right;padding-top: 10;">Contact us at : services.solid@gmail.com</div>
-		<div style="padding-top:35px;">Solid Software (C)2012-2014</div>
+		<div style="padding-top:35px;" scroolto="#SolidHeaderLogo">Solid Software (C)2012-2014</div>
 	</div>
 </body>
 
