@@ -1,0 +1,43 @@
+html , body
+{
+	margin: 0;
+	text-align:center;
+	scroolLocation:0;
+}
+.Header
+{
+	background-color: black;
+	color: white;
+	font-family: fantasy;
+}
+.HeaderItem
+{
+	display: inline-block;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#SolidHeaderLogoImage
+{
+	height: 67;
+	width: 156;
+
+	background-repeat: no-repeat;
+	background-image: url('../recorces/solidHeaderLogo.png');
+}
+#SolidHeaderLogo
+{
+	display: inline-block;
+	left: 0;
+	position: absolute;
+	background-color: black;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom-right-radius: 10px;
+}
+.Seperator
+{
+	height:1px;width:150px;display: inline-block;
+}
