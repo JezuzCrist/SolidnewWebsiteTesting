@@ -4,15 +4,11 @@
 
 $(document).ready ->
 	$('#mainSlider').find('ul').find('li').each (index)->
-		
-		sliderEvents.push(->
-			alert("eventTriggred->"+index)
-		)
 
 		$(@).click ->
 
-			pressedLink = $(@)
-			respondingItem = $('#item-'+pressedLink.attr("number"))
+			pressedLink = $(@)			
+			corespondingItem = $('#item-'+pressedLink.attr("number"))
 			console.log "pressed link = "+pressedLink.attr("number")
 			console.log "responding item = "+'#item-'+pressedLink.attr("number")
 
@@ -31,8 +27,35 @@ $(document).ready ->
 
 
 
+sliderEvents.push(->
+	# console.log ("eventTriggred->")
+	hideVisableSlide()	
+	corespondingItem = $('#item-0')
+	corespondingItem.addClass "selected"
 
+)
+sliderEvents.push(->
+	# console.log ("eventTriggred->")
+	hideVisableSlide()	
+	corespondingItem = $('#item-1')
+	corespondingItem.addClass "selected"
 
+)
+sliderEvents.push(->
+	# console.log ("eventTriggred->")
+	hideVisableSlide()	
+	corespondingItem = $('#item-2')
+	corespondingItem.addClass "selected"
+
+)
+sliderEvents.push(->
+	# console.log ("eventTriggred->")
+	hideVisableSlide()	
+	corespondingItem = $('#item-3')
+	corespondingItem.addClass "selected"
+
+)
 
 @.hideVisableSlide= ->
-	$('.itemContainer  .selected').removeClass ".selected"
+	$('.itemContainer').removeClass "selected"
+	# $('.itemContainer').text "selected"
