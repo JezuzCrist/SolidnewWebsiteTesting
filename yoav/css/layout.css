@@ -18,12 +18,12 @@ body
 }
 
 
-#mainSlider ul
+#mainSlider #sliderButtons
 {
 	background-color: red;
 }
 
-#mainSlider li
+#mainSlider .Button
 {
 	background-color: green;
 	display: inline-block;
@@ -37,5 +37,5 @@ body
 }
 #mainSlider .selected
 {
-	display: block;
+	display: inline-block;
 }

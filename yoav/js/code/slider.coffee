@@ -3,7 +3,7 @@
 
 
 $(document).ready ->
-	$('#mainSlider').find('ul').find('li').each (index)->
+	$('#mainSlider').find('#sliderButtons').find('.Button').each (index)->
 
 		$(@).click ->
 
@@ -12,13 +12,17 @@ $(document).ready ->
 			console.log "pressed link = "+pressedLink.attr("number")
 			console.log "responding item = "+'#item-'+pressedLink.attr("number")
 
-			sliderEvents[index]()
+			# console.log pressedLink.attr("active")
 
-
-			# if pressedLink.attr("selected") == "true"
-				
-			# else
-
+			if pressedLink.attr("active") == "true"
+				# console.log "true"
+				# pressedLink.attr("active","false")
+				$('#mainSlider').find('#sliderButtons').find('.Button ').removeClass("selected")
+			else
+				console.log "event"
+				sliderEvents[index]()
+				pressedLink.attr("active","true")
+				pressedLink.addClass("selected")
 
 
 
@@ -58,4 +62,6 @@ sliderEvents.push(->
 
 @.hideVisableSlide= ->
 	$('.itemContainer').removeClass "selected"
+	$('#mainSlider').find('#sliderButtons').find('.Button ').removeClass("selected")
+	$('#mainSlider').find('#sliderButtons').find('.Button ').attr("active","false")
 	# $('.itemContainer').text "selected"
