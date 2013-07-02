@@ -1,3 +1,11 @@
+define([],->
+	_events;
+
+	returnedObject=
+		{
+			Events: _events
+		}
+)
 
 @.sliderEvents = []
 
