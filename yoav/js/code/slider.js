@@ -1,6 +1,6 @@
 ﻿(function() {
   define(["code/Events"], function(Events) {
-    var returnedObject, _ActivateSlide, _Init, _NextSlide, _RemoveActiveButton, _currentSlide, _events;
+    var returnedObject, _ActivateSlide, _Init, _NextSlide, _RemoveActiveButtonAndSlide, _currentSlide, _events;
     _events = Events.GetEvents();
     _currentSlide = 0;
     _Init = function() {
@@ -37,14 +37,15 @@
       return _ActivateSlide($("#link-" + _currentSlide));
     };
     _ActivateSlide = function(pressedLink) {
-      _RemoveActiveButton();
+      _RemoveActiveButtonAndSlide();
       pressedLink.attr("active", "true");
       pressedLink.addClass("selected");
       return _events[_currentSlide]();
     };
-    _RemoveActiveButton = function() {
+    _RemoveActiveButtonAndSlide = function() {
       $('#mainSlider').find('#sliderButtons').find('.Button ').removeClass("selected");
-      return $('#mainSlider').find('#sliderButtons').find('.Button ').attr("active", "false");
+      $('#mainSlider').find('#sliderButtons').find('.Button ').attr("active", "false");
+      return $('.itemContainer').removeClass("selected");
     };
     return returnedObject = {
       Events: _events,

@@ -37,15 +37,17 @@ define(["code/Events"],(Events)->
 		
 
 	_ActivateSlide = (pressedLink)->
-		_RemoveActiveButton()
+		_RemoveActiveButtonAndSlide()
 		pressedLink.attr("active","true")
 		pressedLink.addClass("selected")
 
 		_events[_currentSlide]()
 
-	_RemoveActiveButton = ->
+	_RemoveActiveButtonAndSlide = ->
 		$('#mainSlider').find('#sliderButtons').find('.Button ').removeClass("selected")
 		$('#mainSlider').find('#sliderButtons').find('.Button ').attr("active","false")
+		$('.itemContainer').removeClass "selected"
+
 
 	
 	returnedObject=
