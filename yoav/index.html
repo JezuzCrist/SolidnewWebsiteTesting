@@ -3,14 +3,40 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<script src="js/lib/jquery-1.10.1.js"></script>
-	<script src="js/code/slider.js"></script>
+	<script data-main="js/main"src="js/require.js"></script>
 </head>
 
 <body>
-	<div id="mainSlider">
+	<div id="Header" style="width:100%;height:60px;background-color:black;color:white;position: fixed;top: 0;">
+		Inovative Surgory
+	</div>
+	<div id="mainSlider" style="margin-top: 60px;">
 		<div id="contentContainer">
 			<div id="item-0" class="itemContainer  selected" visablity="hidden">
-				hii i am item 0
+				if you want pure keyboard action then you have to do this:
+
+				    open regedit
+				    go to HKEY_CLASSES_ROOT\Directory\shell\cmd and rename the Extended key to Extended_save
+				    go to HKEY_CLASSES_ROOT\Drive\shell\cmd and rename the Extended key toExtended_save`
+
+				this adds the "open command window here" entry to the context menu permanently. you can trigger this entry by pressing:
+
+				    alt
+				    let go, context menu opens
+				    press the "underscored" character of the "open command window here" entry or go down with your cursor keys and hit enter
+
+				the name of the menu entry is labled according to the language of your OS.
+
+				an alternative route is to do this:
+
+				    open the folder you want in the command prompt via the explorer
+				    f4
+				    ctrla
+				    ctrlc
+				    winr
+				    cmd /k cd ctrlventer
+
+				which grabs the current path from the address bar of explorer and executes cmd /k cd PATH. with autohotkeys you can do the same, but i do not know autohotkeys.
 			</div>
 			<div id="item-1" class="itemContainer" visablity="hidden">
 				hii i am iem 1

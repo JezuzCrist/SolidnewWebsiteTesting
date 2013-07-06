@@ -39,3 +39,9 @@ body
 {
 	display: inline-block;
 }
+
+
+.itemContainer
+{
+	height: 30px;
+}
