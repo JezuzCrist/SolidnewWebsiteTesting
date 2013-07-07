@@ -43,5 +43,6 @@ body
 
 .itemContainer
 {
-	height: 30px;
+	height: 250px;
+	overflow: hidden;
 }

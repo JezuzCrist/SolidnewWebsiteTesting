@@ -2,44 +2,84 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/navBar.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-responsive.min.css">
 	<script src="js/lib/jquery-1.10.1.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
 	<script data-main="js/main"src="js/require.js"></script>
 </head>
 
-<body>
-	<div id="Header" style="width:100%;height:60px;background-color:black;color:white;position: fixed;top: 0;">
+<body style="">
+	<!-- <div id="Header" style="width:100%;height:60px;background-color:black;color:white;position: fixed;top: 0;">
 		Inovative Surgory
+	</div> -->
+	<!-- <div class="navBar"></div> -->
+	<div id="header" style="position: fixed;top: 0;width: 100%;">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Surgical Frontiers</a>
+				<ul class="nav">
+					<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown" >Link<b class="caret" ></b></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown"><a href="#" data-toggle="dropdown" >Link <b class="caret" ></b></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div id="mainSlider" style="margin-top: 60px;">
 		<div id="contentContainer">
 			<div id="item-0" class="itemContainer  selected" visablity="hidden">
-				if you want pure keyboard action then you have to do this:
+				ד"ר יואב מינץ כירורג כללי ומומחה בכירורגיה זעיר פולשנית (לפרוסקופיה).
 
-				    open regedit
-				    go to HKEY_CLASSES_ROOT\Directory\shell\cmd and rename the Extended key to Extended_save
-				    go to HKEY_CLASSES_ROOT\Drive\shell\cmd and rename the Extended key toExtended_save`
+				בוגר בית הספר לרפואה של האוניברסיטה העברית והדסה. ד"ר מינץ התמחה בכירורגיה כללית בבית החולים הדסה עין-כרם ובבית החולים הר סיני בניו יורק (Mount Sinai Hospital). בהמשך עבר התמחות-על במשך שנתיים בכירורגיה זעיר פולשנית (לפרוסקופית) וכירורגיה בעזרת רובוט במרכז הרפואי של אוניברסיטת קליפורניה בסן-דיאגו ( University of California San Diego). במסגרת זו התמחה גם בטיפול במחלות הקיבה והושט ובכירורגיה להשמנת יתר.
 
-				this adds the "open command window here" entry to the context menu permanently. you can trigger this entry by pressing:
+				לאחר חזרתו להדסה הקים ד"ר מינץ את המרכז לכירורגיה בטכנולוגיות מתקדמות ומאז הוא מנהל אותו. במסגרת מרכז זה מבצע ד"ר מינץ ניתוחים לפרוסקופים מתקדמים כגון: ניתוחים לפרוסקופים בחתך בודד ( Single Port Surgery), וניתוחים דרך פתחי גוף טבעיים (NOTES). ד"ר מינץ היה הראשון והוא בין הבודדים שמבצעים בארץ ניתוחים בטכניקות אלה. מטרת המרכז היא לבצע ניתוחים מסובכים בגישה של כירורגיה זעיר פולשנית. ניתוחים של הקיבה והושט, דרכי המרה והכבד, וניתוחים להשמנת יתר אשר בד"כ מבוצעים כיום בניתוח פתוח, מבוצעים דרך חתכים קטנים ואף דרך חתך אחד בודד בטבור.
 
-				    alt
-				    let go, context menu opens
-				    press the "underscored" character of the "open command window here" entry or go down with your cursor keys and hit enter
+				בשנת 2007 הקים ד"ר מינץ את המעבדה לכירורגיה זעיר פולשנית ופיתוח טכנולוגיות מתקדמות. במסגרת זו הוא משמש כיועץ לחברות רבות המפתחות ציוד חדשני לכירורגיה לפרוסקופית. מספר מוצרים שהחלו את פיתוחם במעבדה זו נמצאים כבר היום בשימוש קליני בניתוחים בארץ ובעולם.
 
-				the name of the menu entry is labled according to the language of your OS.
-
-				an alternative route is to do this:
-
-				    open the folder you want in the command prompt via the explorer
-				    f4
-				    ctrla
-				    ctrlc
-				    winr
-				    cmd /k cd ctrlventer
-
-				which grabs the current path from the address bar of explorer and executes cmd /k cd PATH. with autohotkeys you can do the same, but i do not know autohotkeys.
 			</div>
 			<div id="item-1" class="itemContainer" visablity="hidden">
-				hii i am iem 1
+				
+				תחומי טיפול:
+				כירורגיה לפרוסקופית
+				תיקון לפרוסקופי של בקעים בדופן הבטן במפשעות ובסרעפת
+				כירורגיה לפרוסקופית של הקיבה והושט בשל מחלות שפירות וגידוליות
+				תיקון לפרוסקופי של רפלוקס
+				אכלזיה
+				כירורגיה לפרוסקופית של הטחול, אדרנל, כיס מרה, דרכי מרה וכבד.
+				כירורגיה להשמנת יתר
+				ניתוחי מעי דק וגס
+				ניתוחים מגוונים בעזרת רובוט, בחתך בודד ודרך פתחי גוף טבעיים.
+
+				מקבל מטופלים דרך קופות חולים (מכבי/מאוחדת/כללית), ביטוחים, פרטי:
+				עובד עם כל קופות החולים והביטוחים במסגרת הדסה עין כרם
+
+
+				חברות בארגונים מקצועיים:
+				הסתדרות הרפואית בישראל
+				איגוד הכירורגים בישראל
+				החברה הישראלית לכירורגיה אנדוסקופית
+				SAGES - Society of American Gastrointestinal and Endoscopic Surgeons
+				EAES - European Association for Endoscopic Surgery
+				MIRA – Minimally Invasive Robotic Association
+				SMIT – Society for Medical Innovation and Technology
 			</div>
 			<div id="item-2" class="itemContainer" visablity="hidden">
 				item 2
@@ -65,6 +105,11 @@
 		</div>
 
 	</div>
+
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br>
 
 </body>
 

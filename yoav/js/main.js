@@ -1,6 +1,5 @@
 ﻿(function() {
   require(["code/slider"], function(Slider) {
-    Slider.Init();
-    return Slider.NextSlide();
+    return Slider.Init();
   });
 }).call(this);
